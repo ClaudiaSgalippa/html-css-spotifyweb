@@ -27,6 +27,10 @@
     border-color: red;
 }
 
+#aside-up {
+    height: 50%;
+}
+
 .logo {
     width: 60%;
     padding-bottom: 20px;
@@ -67,7 +71,16 @@
     font-weight: 700;
 }
 
+#aside-down {
+    height: 50%;
+    border-style: dashed;
+    border-color: red;
+    align-content: end;
+}
 
+.profile img {
+    width: 10%;
+}
 
 /*Column*/
 
