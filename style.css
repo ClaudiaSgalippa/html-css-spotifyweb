@@ -18,11 +18,14 @@
 /*Aside*/
 
 #aside-container {
-    height: auto;
+
     width: 15%;
-    padding: 20px;
+    padding-inline: 20px;
+    padding-block: 15px;
     background-color: #000000;
     font-weight: 600;
+    font-size: 15px;
+
 }
 
 #aside-up {
@@ -30,16 +33,12 @@
 }
 
 .logo {
-    width: 60%;
+    width: 70%;
     padding-bottom: 20px;
 }
 
 .menu img {
-    max-block-size: 25px;
-}
-
-.menu li {
-    padding-top: 5px;
+    max-block-size: 30px;
 }
 
 .home {
@@ -82,7 +81,8 @@ hr {
 }
 
 .profile img {
-    width: 10%;
+    height: 15%;
+    width: 15%;
 }
 
 .profile-img {
@@ -102,16 +102,20 @@ hr {
 /*Column*/
 
 #column {
+    height: calc(100vh - 100px);
     display: block;
-    width: 85%;
+    width: 100%;
+    
+
 }
 
 /*Upper-bar*/
 
 #upper-bar {
+
     display: flex;
     height: 100px;
-    width: 85%;
+    width: 87%;
     position: fixed;
     background-color: rgba(0, 0, 0, 0.6);
     justify-content: end;
@@ -136,25 +140,74 @@ hr {
 /*Main*/
 
 #main {
-    height: calc(100vh - 200px);
+    height: calc(100vh - 100px);
     width: auto;
     background-color: #141922;
 }
 
+
+/*Nav-bar*/
+
 .container-nav-bar {
-    padding-top: 110px;
+    padding-top: 120px;
     width: 100%;
 }
 
 .nav-bar {
     display: flex;
     justify-content: center;
+    padding-bottom: 30px;
 }
 
 .shortcut {
     display: flex;
     column-gap: 30px;
     font-weight: bold;
+}
+
+/*Music-Library*/
+
+.row-recently-played {
+    height: 400px;
+    border-style: dashed;
+    border-color: white;
+    padding-left: 30px;
+
+}
+
+.header-recently-played {
+    color: white;
+}
+
+.recently-played {
+    display: flex;
+    width: calc(100% / 6);
+    column-gap: 30px;
+
+}
+
+.recently-played img {
+    width: 180px;
+    padding-block: 30px;
+}
+
+.row-create-for {
+    height: 400px;
+    border-style: dashed;
+    border-color: white;
+}
+
+.row-popular-artists {
+    height: 400px;
+    border-style: dashed;
+    border-color: white;
+}
+
+.figcaption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: none;
 }
 
 /*Bottom-bar*/
