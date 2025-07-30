@@ -13,8 +13,6 @@
 #container {
     display: flex;
     height: auto;
-    border-style: dashed;
-    border-color: blue;
 }
 
 /*Aside*/
@@ -25,9 +23,8 @@
     padding: 20px;
     background-color: #000000;
     font-weight: 600;
-    border-style: dashed;
-    border-color: red;
 }
+
 
 #aside-up {
     height: 50%;
@@ -39,7 +36,7 @@
 }
 
 .menu img {
-    width: 13%;
+    max-block-size: 25px;
 }
 
 .menu li {
@@ -78,8 +75,6 @@
 
 #aside-down {
     height: 50%;
-    
-    border-color: red;
     align-content: end;
 }
   
@@ -110,18 +105,34 @@ hr {
 #column {
     display: block;
     width: 85%;
-    border-style: dashed;
-    border-color: chocolate;
 }
 
 /*Upper-bar*/
 
 #upper-bar {
+    display: flex;
     height: 100px;
-    width: 100%;
-    background-color: #080B12;
-    border-style: dashed;
-    border-color: blueviolet;
+    width: 85%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: end;
+    align-items: center;
+}
+
+.upgrade {
+
+    height: auto;
+    width: auto;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 13px 40px;
+    border-radius: 25px;
+    border: 2px, solid, white;
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+
+
 }
 
 /*Main*/
@@ -130,8 +141,6 @@ hr {
     height: calc(100vh - 200px);
     width: auto;
     background-color: #141922;
-    border-style: dashed;
-    border-color: chartreuse;
 }
 
 /*Bottom-bar*/
@@ -139,5 +148,18 @@ hr {
 #currently-playing {
     height: 100px;
     background-color: #282828;
-    border-style: dashed;
 }
+
+/*RESPONSIVE XS*/
+
+@media screen and (max-width:360px) {
+
+    #aside-container {
+        padding-left: 6px;
+    }
+
+    .react, .name, .app-download, .header-playlist, .plus-button {
+        display: none;
+    }
+}
+
