@@ -139,7 +139,6 @@ hr {
     overflow: auto;
 }
 
-
 /*Nav-bar*/
 
 .container-nav-bar {
@@ -192,11 +191,9 @@ hr {
     row-gap: none;
 }
 
-.header-create-for {
+.header-create-for, .header-popular-artist {
     padding-bottom: 10px;
 }
-
-
 
 /*Bottom-bar*/
 
