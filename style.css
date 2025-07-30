@@ -18,14 +18,12 @@
 /*Aside*/
 
 #aside-container {
-
     width: 15%;
     padding-inline: 20px;
     padding-block: 15px;
     background-color: #000000;
     font-weight: 600;
     font-size: 15px;
-
 }
 
 #aside-up {
@@ -105,14 +103,11 @@ hr {
     height: calc(100vh - 100px);
     display: block;
     width: 100%;
-    
-
 }
 
 /*Upper-bar*/
 
 #upper-bar {
-
     display: flex;
     height: 100px;
     width: 87%;
@@ -120,11 +115,9 @@ hr {
     background-color: rgba(0, 0, 0, 0.6);
     justify-content: end;
     align-items: center;
-
 }
 
 .upgrade {
-
     height: auto;
     width: auto;
     margin-right: 10px;
@@ -143,6 +136,7 @@ hr {
     height: calc(100vh - 100px);
     width: auto;
     background-color: #141922;
+    overflow: auto;
 }
 
 
@@ -167,15 +161,15 @@ hr {
 
 /*Music-Library*/
 
-.row-recently-played {
+.row-recently-played, .row-create-for, .row-popular-artists {
     height: 400px;
+    padding-left: 30px;
+    padding-top: 15px;
     border-style: dashed;
     border-color: white;
-    padding-left: 30px;
-
 }
 
-.header-recently-played {
+.header-recently-played, .header-create-for, .header-popular-artist {
     color: white;
 }
 
@@ -183,24 +177,12 @@ hr {
     display: flex;
     width: calc(100% / 6);
     column-gap: 30px;
-
 }
 
 .recently-played img {
     width: 180px;
-    padding-block: 30px;
-}
-
-.row-create-for {
-    height: 400px;
-    border-style: dashed;
-    border-color: white;
-}
-
-.row-popular-artists {
-    height: 400px;
-    border-style: dashed;
-    border-color: white;
+    padding-top: 30px;
+    padding-bottom: 20px;
 }
 
 .figcaption {
@@ -209,6 +191,12 @@ hr {
     align-items: center;
     row-gap: none;
 }
+
+.header-create-for {
+    padding-bottom: 10px;
+}
+
+
 
 /*Bottom-bar*/
 
