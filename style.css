@@ -164,11 +164,9 @@ hr {
     height: 400px;
     padding-left: 30px;
     padding-top: 15px;
-    border-style: dashed;
-    border-color: white;
 }
 
-.header-recently-played, .header-create-for, .header-popular-artist {
+.header-recently-played, .header-create-for, .header-popular-artist, .author {
     color: white;
 }
 
@@ -199,12 +197,55 @@ hr {
     border-radius: 50%;
 }
 
+.change-width {
+    width: 85px;
+}
+
+.artist-img {
+    width: 60%;
+    margin-left: 16px;
+    margin-top: 16px;
+}
+
+.col {
+    display: grid;
+    align-self: center;
+    width: 15%;
+    font-size: 12px;
+}
+
+.hearth-folder {
+    align-self: center;
+}
+
+.fa-regular {
+    padding-left: 10px;
+}
+
+
 /*Bottom-bar*/
 
 #currently-playing {
     height: 100px;
     background-color: #282828;
 }
+
+.container-bottom-bar {
+    display: flex;
+    height: 100%;
+}
+
+.artist-sinister, .playbar, .settings {
+    border-style: dashed;
+    border-color: white;
+    width: calc(100% / 3);
+}
+
+.artist-sinister, .settings {
+    display: flex;
+}
+
+
 
 /*RESPONSIVE XS*/
 
