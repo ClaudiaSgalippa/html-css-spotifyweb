@@ -201,11 +201,20 @@ hr {
 .row-recently-played, .row-create-for, .row-popular-artists{
     display: flex;
     width: calc((100% / 6) - (150px / 6));
-    gap: 30px;
 }
 
-.header-recently-played, .header-create-for, .header-popular-artist, .author {
+.header-recently-played, .author {
     color: white;
+    padding-bottom: 30px;
+}
+
+.header-create-for, .header-popular-artist {
+    color: white;
+}
+
+.padding-h5 {
+    padding-top: 10px;
+    padding-bottom: 30px;
 }
 
 .recently-played {
@@ -216,8 +225,6 @@ hr {
 
 .recently-played img {
     width: 180px;
-    padding-top: 30px;
-    padding-bottom: 20px;
 }
 
 .figcaption {
@@ -225,10 +232,6 @@ hr {
     flex-direction: column;
     align-items: center;
     row-gap: none;
-}
-
-.header-create-for, .header-popular-artist {
-    padding-bottom: 10px;
 }
 
 .round {
