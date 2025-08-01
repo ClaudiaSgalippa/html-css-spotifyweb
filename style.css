@@ -18,7 +18,8 @@
 /*Aside*/
 
 #aside-container {
-    width: 15%;
+    max-width: 250px;
+    min-width: 250px;
     padding-inline: 20px;
     padding-block: 15px;
     background-color: #000000;
@@ -33,6 +34,13 @@
 .logo {
     width: 70%;
     padding-bottom: 20px;
+}
+
+.logo2 {
+    width: 15%;
+    padding-bottom: 20px;
+    display: none;
+
 }
 
 .menu img {
@@ -200,10 +208,7 @@ hr {
     position: absolute;
 }
 
-.row-recently-played, .row-create-for, .row-popular-artists{
-    display: flex;
-    width: calc((100% / 6) - (150px / 6));
-}
+
 
 .header-recently-played, .author {
     color: white;
@@ -304,11 +309,17 @@ hr {
 @media screen and (max-width:360px) {
 
     #aside-container {
-        padding-left: 6px;
+        max-width: 50px;
+        padding-left: 10px;
+
     }
 
-    .react, .name, .app-download, .header-playlist, .plus-button {
+    .logo, .react, .name, .app-download, .header-playlist, .plus-button {
         display: none;
+    }
+
+    .logo2 {
+        display: block;
     }
 }
 
